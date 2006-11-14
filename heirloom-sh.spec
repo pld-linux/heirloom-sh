@@ -4,6 +4,7 @@
 #
 %define snap	050706
 Summary:	The Heirloom Bourne Shell
+Summary(pl):	Pow³oka Heirloom Bourne Shell
 Name:		heirloom-sh
 Version:	0.1
 Release:	0.%{snap}.1
@@ -25,8 +26,14 @@ The Heirloom Bourne Shell is a portable variant of the traditional
 Unix shell. It has been derived from OpenSolaris code and thus
 implements the SVR4/SVID3 level of the shell.
 
+%description -l pl
+Heirloom Bourne Shell to przeno¶na wersja tradycyjnej pow³oki
+uniksowej. Wywodzi siê z kodu OpenSolarisa, wiêc implementuje pow³okê
+poziomu SVR4/SVID3.
+
 %package static
 Summary:	Statically linked Heirloom Bourne Shell
+Summary(pl):	Statycznie zlinkowana pow³oka Heirloom Bourne Shell
 Group:		Applications/Shells
 Requires(preun):	sed >= 4.1.5-1.2
 Requires:	%{name} = %{version}-%{release}
@@ -38,6 +45,14 @@ implements the SVR4/SVID3 level of the shell.
 
 This packege contains statically linked version of Heirloom Bourne
 Shell.
+
+%description static -l pl
+Heirloom Bourne Shell to przeno¶na wersja tradycyjnej pow³oki
+uniksowej. Wywodzi siê z kodu OpenSolarisa, wiêc implementuje pow³okê
+poziomu SVR4/SVID3.
+
+Ten pakiet zawiera statycznie zlinkowan± wersjê pow³oki Heirloom
+Bourne Shell.
 
 %prep
 %setup  -q -n %{name}-%{snap}
