@@ -4,7 +4,7 @@
 #
 %define snap	050706
 Summary:	The Heirloom Bourne Shell
-Summary(pl.UTF-8):   Powłoka Heirloom Bourne Shell
+Summary(pl.UTF-8):	Powłoka Heirloom Bourne Shell
 Name:		heirloom-sh
 Version:	0.1
 Release:	0.%{snap}.1
@@ -33,7 +33,7 @@ poziomu SVR4/SVID3.
 
 %package static
 Summary:	Statically linked Heirloom Bourne Shell
-Summary(pl.UTF-8):   Statycznie zlinkowana powłoka Heirloom Bourne Shell
+Summary(pl.UTF-8):	Statycznie zlinkowana powłoka Heirloom Bourne Shell
 Group:		Applications/Shells
 Requires(preun):	sed >= 4.1.5-1.2
 Requires:	%{name} = %{version}-%{release}
